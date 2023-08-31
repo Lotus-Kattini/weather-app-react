@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 2.5rem;
+    background-color: rgb(137, 170, 237);
+    font-family: 'Phudu', cursive;
+}
+
+.weather{
+    width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(130deg,rgb(86,86,235),rgb(5,5,199));
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: none;
+    /* outline: 0; */
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 12px;
+}
+
+.search button{
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    /* outline: 0; */
+    cursor: pointer;
+}
+
+.winfo img{
+    width: 15rem;
+    padding-top: 1.2rem;
+}
+
+.winfo h1{
+    font-size: 2.2rem;
+}
+.winfo h2{
+    font-size: 2.6rem;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.col{
+    padding-top: 1.5rem;
+}
+
+.dectext{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+.error{
+    text-align: left;
+    padding-top: 0.7rem;
+    color: rgba(238, 169, 169);
+
+    font-size: 1.5rem;
+    /* background-color: #fff; */
+}
+
+@media (max-width:553px){
+    .weather{
+        width: 350px;
+        height: auto;
+
+    }
+}
+
+@media (max-width:466px){
+    .weather{
+        width: 300px;
+        height: auto;
+    }
+    .search input{
+    padding: 8px 15px;
+    }
+}
